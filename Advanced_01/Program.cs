@@ -114,13 +114,35 @@ namespace Advanced_01
             //Answer: means the type paramter is used for input
             #endregion
 
-            //Q17: What is the difference between covariance and
-            //contravariance?
+            #region Q17
+            //Q17: What is the difference between covariance and contravariance?
+            //Answer: Converiance uses out keyword, contracvariance use in
+            //        Convariance used for output but contra. use for input
+            //        Con. derived type -> base type, contra. base type -> derived type 
+            #endregion
 
+            #region Q18
             //Q18: How do static members work in generic types?
+            //Answer: static members will be shared on the same objects data type, static members are seperate for each different T 
+            #endregion
+
+            #region Q19
             //Q19: How can you inherit from a generic class?
+            //Answer: must identify the type T or keep the derived class generic 
+            #endregion
+
+            #region MyRegion
             //Q20: Complete Exercise -Create a generic Cache < TKey,
             //TValue>with Add, Get, Remove, Contains, and expiration support.
+            Cashe<int, string> cashe = new Cashe<int, string>();
+            cashe.Add(1, "Mary");
+            cashe.Add(2, "Mohssen");
+            Console.WriteLine("Get Value of index 1: "+cashe.Get(1));
+            cashe.Remove(1);
+            Console.WriteLine("This is Default "+cashe.Get(1));
+
+            #endregion
+
         }
     }
 }
