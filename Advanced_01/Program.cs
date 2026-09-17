@@ -104,9 +104,16 @@ namespace Advanced_01
 
             #endregion
 
-
+            #region Q15
             //Q15: What is covariance? Explain the 'out' keyword.
+            //Answer: means the type paramter is used for output
+            #endregion
+
+            #region Q16
             //Q16: What is contravariance? Explain the 'in' keyword.
+            //Answer: means the type paramter is used for input
+            #endregion
+
             //Q17: What is the difference between covariance and
             //contravariance?
 
