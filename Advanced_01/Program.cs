@@ -76,9 +76,18 @@ namespace Advanced_01
             //I create generic printer class, any type used as T must implement Iprintable
             #endregion
 
-
+            #region Q11
             //Q11: What is the base class constraint? Write an example.
+            //Answer: it means that T must inherit from a specific base class
+            AnimalContainer<Dog> animalContainer = new AnimalContainer<Dog>();
+            #endregion
+
+            #region Q12
             //Q12: How do you apply multiple constraints? Write an example.
+            //Answer: by using comma
+            //class Test<T> where T: Animal, Iprintable, new(){}
+            #endregion
+
 
             //1
 
