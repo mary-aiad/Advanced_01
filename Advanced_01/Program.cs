@@ -18,11 +18,20 @@ namespace Advanced_01
             Console.WriteLine(container.Get());
             #endregion
 
+            #region Q3
+            //Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
+            //Answer: Generic class can have more than one type paramter
+            #endregion
 
-            //Q3:What are multiple type parameters? Write Pair<TKey,
-            //TValue>.
-
+            #region Q4
             //Q4: What is a generic method? Write Swap < T > method.
+            //is a method take paramter of any type
+            int x = 3;
+            int y = 6;
+            container.Swap(ref x, ref y);
+            Console.WriteLine($"{x} , {y}");
+            #endregion
+
             //Q5: Write a generic method FindMax < T > that finds maximum
             //value
 

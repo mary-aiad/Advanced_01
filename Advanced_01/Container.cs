@@ -10,7 +10,6 @@ namespace Advanced_01
     {
         private T value;
 
-        
         public void Add(T item)
         {
             value = item;
@@ -19,6 +18,13 @@ namespace Advanced_01
         public T Get()
         {
             return value;
+        }
+
+        public void Swap<T>(ref T x, ref T y)
+        {
+            T temp = x;
+            x = y;
+            y = temp;
         }
     }
 }
