@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Reflection.Metadata;
 
 namespace Advanced_01
 {
@@ -57,8 +58,24 @@ namespace Advanced_01
             //Test<string> test = new Test<string>();
             #endregion
 
+            #region Q9
             //Q9: What is the 'new()' constraint? Write an example.
+            //Answer: it means the T must have a public paramterless constructor
+            //class product<T> where T: new(){}
+            //class customer
+            //{
+            //  public Customer(){}
+            //}
+            //product<customer> product = new product<customer>();
+
+            #endregion
+
+            #region Q10
             //Q10: What is the interface constraint? Write an example.
+            //Answer: it mean that T must implement a specific interface
+            //I create generic printer class, any type used as T must implement Iprintable
+            #endregion
+
 
             //Q11: What is the base class constraint? Write an example.
             //Q12: How do you apply multiple constraints? Write an example.
