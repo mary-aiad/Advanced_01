@@ -43,9 +43,20 @@ namespace Advanced_01
             //Answer: is an inteface that uses a type paramter.
             #endregion
 
-
+            #region Q7
             //Q7: What is the 'struct' constraint? Write an example.
+            //Answer: it means that T must be a value type of struct not class
+            //class Test<T> where T: struct{}
+            //Test<int> test = new Test<int>();
+            #endregion
+
+            #region Q8
             //Q8: What is the 'class' constraint? Write an example.
+            //Answer: it means that T must be a class
+            //Class Test<T> wher T: class{}
+            //Test<string> test = new Test<string>();
+            #endregion
+
             //Q9: What is the 'new()' constraint? Write an example.
             //Q10: What is the interface constraint? Write an example.
 
