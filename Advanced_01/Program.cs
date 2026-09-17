@@ -13,9 +13,9 @@ namespace Advanced_01
 
             #region Q2
             //Q2 : Write a generic class Container<T> with Add and Get methods.
-            Container<int> container = new Container<int>();
-            container.Add(1);
-            Console.WriteLine(container.Get());
+            //Container<int> container = new Container<int>();
+            //container.Add(1);
+            //Console.WriteLine(container.Get());
             #endregion
 
             #region Q3
@@ -26,16 +26,24 @@ namespace Advanced_01
             #region Q4
             //Q4: What is a generic method? Write Swap < T > method.
             //is a method take paramter of any type
-            int x = 3;
-            int y = 6;
-            container.Swap(ref x, ref y);
-            Console.WriteLine($"{x} , {y}");
+            //int x = 3;
+            //int y = 6;
+            //container.Swap(ref x, ref y);
+            //Console.WriteLine($"{x} , {y}");
             #endregion
 
-            //Q5: Write a generic method FindMax < T > that finds maximum
-            //value
+            #region Q5
+            //Q5: Write a generic method FindMax < T > that finds maximum value
+            //Container<int> container = new Container<int>();
+            //Console.WriteLine(container.FindMax(10, 12));
+            #endregion
 
+            #region Q6
             //Q6: What is a generic interface? Write IRepository<T>.
+            //Answer: is an inteface that uses a type paramter.
+            #endregion
+
+
             //Q7: What is the 'struct' constraint? Write an example.
             //Q8: What is the 'class' constraint? Write an example.
             //Q9: What is the 'new()' constraint? Write an example.

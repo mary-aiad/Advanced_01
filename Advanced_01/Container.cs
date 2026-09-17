@@ -26,5 +26,10 @@ namespace Advanced_01
             x = y;
             y = temp;
         }
+
+        public T FindMax<T>(T x , T y) where T : IComparable 
+        {
+            return x.CompareTo(y) > 0 ?x : y;
+        }
     }
 }
