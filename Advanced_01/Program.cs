@@ -79,7 +79,7 @@ namespace Advanced_01
             #region Q11
             //Q11: What is the base class constraint? Write an example.
             //Answer: it means that T must inherit from a specific base class
-            AnimalContainer<Dog> animalContainer = new AnimalContainer<Dog>();
+            //AnimalContainer<Dog> animalContainer = new AnimalContainer<Dog>();
             #endregion
 
             #region Q12
@@ -88,13 +88,22 @@ namespace Advanced_01
             //class Test<T> where T: Animal, Iprintable, new(){}
             #endregion
 
-
-            //1
-
+            #region Q13
             //Q13: What does the 'default' keyword do in generics?
+            //Answer: return the default value of the type T
+            #endregion
 
-            //Q14: Write a SafeList < T > that returns default when the index is
-            //invalid.
+            #region Q14
+            //Q14: Write a SafeList < T > that returns default when the index is invalid
+            SafeList<int> safeList = new SafeList<int>();
+            safeList.Add(1);
+            safeList.Add(2);
+            safeList.Add(3);
+            safeList.Add(4);
+            Console.WriteLine(safeList.Get(5)); // 0 default value of int
+
+            #endregion
+
 
             //Q15: What is covariance? Explain the 'out' keyword.
             //Q16: What is contravariance? Explain the 'in' keyword.
